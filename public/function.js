@@ -1,15 +1,18 @@
-//const serverUrl = "http://localhost:3000";
-const serverUrl ='https://authentication-4592.onrender.com';
-
-function signin() {
-    const newURL = `${serverUrl}/signin`;
-    window.location.href = newURL;
-}
+$("#menu").on("click", () =>{
+    $("nav ul").toggle();
+});
 
 $(function () {
     $("#signup").hide();
     $("#password2").hide();
 });
+
+const serverUrl = "http://localhost:3000";
+
+function signin() {
+    const newURL = `${serverUrl}/signin`;
+    window.location.href = newURL;
+}
 
 $(document).ready(() =>{
     if($("#title").text() === "Signin to your Account"){
@@ -26,7 +29,6 @@ $(document).ready(() =>{
         });   
     }
 });
-
 
 $("#signin").on("click", function post() {
     let email = $("#email").val();
@@ -58,8 +60,6 @@ function handleSignInResponse(responseData) {
             console.error("Invalid response from the server");
     }
 }
-
-// ...
 
 $("#signup").on("click", function post() {
     let email = $("#email").val();

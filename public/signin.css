@@ -148,4 +148,17 @@ body {
     font-size: large;
 }
 
+@media only screen and (max-width: 768px) {
+    #hero {
+        display: none; /* Hide hero image on small screens */
+    }
+
+    #user-box {
+        width: 100%; /* Take up the entire width on small screens */
+    }
+
+    #registration {
+        width: 90%; /* Adjusted width for small screens */
+    }
+}
 

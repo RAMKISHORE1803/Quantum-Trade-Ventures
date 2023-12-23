@@ -1,49 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;600;800&display=swap');
-/*Base Styling*/
 
-*{
+/* Base Styling */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
-body{
+
+body {
     font-family: "Poppins", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     font-weight: 400;
     font-size: 1.6rem;
 }
-h1,h2,p{
+
+h1, h2, p {
     margin: 1.6rem 0;
 }
-h1{
+
+h1 {
     font-weight: 800;
     font-size: 3.6rem;
     padding-top: 10px;
 }
-h2{
+
+h2 {
     font-weight: 800;
     font-size: 2.4rem;
 }
-p{
+
+p {
     font-weight: 400;
     font-size: 1.6rem;
 }
 
 /* Header & nav-bar */
-header{
+header {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(./images/background.jpg) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(./images/background.jpg);
     color: whitesmoke;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
-nav h1{
+nav h1 {
     font-size: 3.2rem;
     margin: 0;
     color: rgb(26, 124, 92);
@@ -52,40 +57,39 @@ nav h1{
     cursor: pointer;
 }
 
-
-nav{
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
- 
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-right: 2.5rem;
     margin-top: 1.8rem;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(26, 124, 92);
     transition: 0.25s ease-in-out;
     cursor: pointer;
 }
 
-#menu{
+#menu {
     display: none;
 }
 
-#hero{
+#hero {
     width: 50%;
     padding-top: 100px;
     padding-left: 30px;
     margin-left: 70px;
 }
 
-form input{
+form input {
     display: block;
     height: 40px;
     width: 300px;
@@ -94,7 +98,7 @@ form input{
     padding: 9px;
 }
 
-form input[type = submit]{
+form input[type = submit] {
     margin-top: 15px;
     background-color: #54B435;
     font-family: 'Roboto', sans-serif;
@@ -104,13 +108,14 @@ form input[type = submit]{
     cursor: pointer;
 }
 
-input::placeholder{
+input::placeholder {
     font-family: 'Kanit', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
-#join{
+
+#join {
     padding: 0px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -128,45 +133,45 @@ input::placeholder{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 768px){
-    nav{
+@media only screen and (max-width: 768px) {
+    nav {
         flex-direction: column;
     }
 
-    #menu{
+    #hero {
+        width: 80%;
+        padding-top: 50px;
+        padding-left: 10px;
+        margin-left: 70px;
+    }
+
+    #menu {
         display: block;
         position: absolute;
         top: 25px;
         right: 20px;
+        cursor: pointer;
+        z-index: 100;
     }
-    nav ul{
+
+    nav ul {
         background: #7D7C7C;
         display: none;
+        left: 0;
+        width: 90%;
+        z-index: 100;
+        align-self: center;
     }
 
-    nav ul li{
+    nav ul li {
         color: black;
         display: block;
-        padding: 2% 0;
+        padding: 2%;
     }
 
-    .showmenu{
-        display: block;
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(./images/background.jpg);
+        color: whitesmoke;
+        background-size: cover;
     }
 }

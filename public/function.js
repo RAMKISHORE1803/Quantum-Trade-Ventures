@@ -7,7 +7,7 @@ $(function () {
     $("#password2").hide();
 });
 
-const serverUrl = "http://localhost:3000";
+const serverUrl = "https://authentication-4592.onrender.com";
 
 function signin() {
     const newURL = `${serverUrl}/signin`;

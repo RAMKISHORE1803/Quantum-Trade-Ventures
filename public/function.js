@@ -1,4 +1,5 @@
-const serverUrl = "http://localhost:3000";
+//const serverUrl = "http://localhost:3000";
+const serverUrl = process.env.NODE_ENV === 'production' ? 'https://authentication-4592.onrender.com' : 'http://localhost:3000';
 
 function signin() {
     const newURL = `${serverUrl}/signin`;

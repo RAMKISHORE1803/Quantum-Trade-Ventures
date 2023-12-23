@@ -140,8 +140,9 @@ input::placeholder {
 
     #hero {
         width: 80%;
-        padding-top: 25px;
-        padding-left: 5px;
+        padding-top: 20px;
+        padding-left: 2px;
+        padding-right: 15px;
         margin-left: 70px;
     }
 

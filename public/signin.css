@@ -160,5 +160,9 @@ body {
     #registration {
         width: 90%; /* Adjusted width for small screens */
     }
+
+    h1{
+        text-align: center;
+    }
 }
 
